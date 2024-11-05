@@ -32,8 +32,8 @@ double getSum(double a, double b, double c)
 
 int main()
 {
+    double functionInput;          // Part 1 variable
     int number1, number2;          // Part 2 varaibles
-    double subjectOf3Functions;    // Part 1 variable
     double alvin, simon, theodore; // Part 3 variables
     // TODO: Come up with good names for these variables
 
@@ -52,17 +52,23 @@ int main()
     c. The floor of the number
     */
 
-    cout << "Enter any number: ";
-    cin >> subjectOf3Functions;
+    cout << "Think of a number.\nThis number will go thorugh a "
+         << "series of functions to determine:\n"
+         << " - It's square root\n"
+         << " - The fourth power of the number\n"
+         << " - And the floor of the number\n"
+         << "Enter your number here: ";
 
-    cout << "The square root of " << subjectOf3Functions
-         << " is " << sqrt(subjectOf3Functions) << "\n";
+    cin >> functionInput;
 
-    cout << subjectOf3Functions << " raised to the 4th power"
-         << " is " << pow(subjectOf3Functions, 4) << "\n";
+    cout << "\nThe square root of " << functionInput
+         << " is " << sqrt(functionInput) << "\n";
 
-    cout << "The floor of " << subjectOf3Functions
-         << " is " << floor(subjectOf3Functions) << endl;
+    cout << functionInput << " raised to the 4th power"
+         << " is " << pow(functionInput, 4) << "\n";
+
+    cout << "The floor of " << functionInput
+         << " is " << floor(functionInput) << endl;
 
     /*
     Part 2:
@@ -70,10 +76,13 @@ int main()
     code) AND RUN IT!
     */
 
-    cout << "Now enter two integers: ";
+    cout << "\nNow think about 2 integers.\n"
+         << "The integers will go thorugh a\nfunction to find twice it's "
+         << "product.\n"
+         << "Enter your intergers here: ";
     cin >> number1 >> number2;
 
-    cout << "Twice the product of " << number1 << " and "
+    cout << "\nTwice the product of " << number1 << " and "
          << number2 << " is: " << doubleMultiply(number1, number2)
          << endl;
 
@@ -91,10 +100,12 @@ int main()
     code and a copy of your output.
     */
 
-    cout << "Finally, type any three numbers: ";
+    cout << "\nFinally, think about any 3 numbers.\n"
+         << "The sum of the three will be calculated with a function.\n"
+         << "Enter them here: ";
     cin >> alvin >> simon >> theodore;
 
-    cout << "The sum of " << alvin << ", " << simon
+    cout << "\nThe sum of " << alvin << ", " << simon
          << ", and " << theodore << " is "
          << getSum(alvin, simon, theodore);
 
