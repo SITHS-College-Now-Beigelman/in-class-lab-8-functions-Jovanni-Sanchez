@@ -18,10 +18,24 @@ int doubleMultiply(int a, int b)
     return product;        // Returns the new value of the product
 }
 
+double getSum(double a, double b, double c)
+{
+    /* This function will return the sum of three inputs.
+    Each input must be a double. "result" is declared within this
+    function and will be assigned to the sum of the three inputs.
+    Once calculated, the result will be returned. */
+
+    double result;        // Will be assigned to the sum of the numbers
+    result = (a + b + c); // Finds the sum and assigned it to result
+    return result;        // Returns the result of the equation
+}
+
 int main()
 {
-    int number1, number2;
-    double subjectOfTheFunctions;
+    int number1, number2;          // Part 2 varaibles
+    double subjectOf3Functions;    // Part 1 variable
+    double alvin, simon, theodore; // Part 3 variables
+    // TODO: Come up with good names for these variables
 
     /*
     Part 1:
@@ -39,16 +53,16 @@ int main()
     */
 
     cout << "Enter any number: ";
-    cin >> subjectOfTheFunctions;
+    cin >> subjectOf3Functions;
 
-    cout << "The square root of " << subjectOfTheFunctions
-         << " is " << sqrt(subjectOfTheFunctions) << "\n";
+    cout << "The square root of " << subjectOf3Functions
+         << " is " << sqrt(subjectOf3Functions) << "\n";
 
-    cout << subjectOfTheFunctions << " raised to the 4th power"
-         << " is " << pow(subjectOfTheFunctions, 4) << "\n";
+    cout << subjectOf3Functions << " raised to the 4th power"
+         << " is " << pow(subjectOf3Functions, 4) << "\n";
 
-    cout << "The floor of " << subjectOfTheFunctions
-         << " is " << floor(subjectOfTheFunctions) << endl;
+    cout << "The floor of " << subjectOf3Functions
+         << " is " << floor(subjectOf3Functions) << endl;
 
     /*
     Part 2:
@@ -62,6 +76,27 @@ int main()
     cout << "Twice the product of " << number1 << " and "
          << number2 << " is: " << doubleMultiply(number1, number2)
          << endl;
+
+    /*
+    Part 3:
+    Write a full program that adds three floating point numbers. Your
+    solution should have a function named getSum that accepts three
+    double parameters and returns the sum of those three doubles.
+
+    Your main function should call the getSum function and assigns the
+    return value to a double variable named result that is declared inside
+    the main function.
+
+    Your program should then print out the value stored in result. Submit the
+    code and a copy of your output.
+    */
+
+    cout << "Finally, type any three numbers: ";
+    cin >> alvin >> simon >> theodore;
+
+    cout << "The sum of " << alvin << ", " << simon
+         << ", and " << theodore << " is "
+         << getSum(alvin, simon, theodore);
 
     return 0;
 }
