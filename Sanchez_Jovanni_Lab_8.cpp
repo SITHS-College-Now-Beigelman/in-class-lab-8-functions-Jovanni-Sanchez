@@ -35,7 +35,7 @@ int main()
     double functionInput;          // Part 1 variable
     int number1, number2;          // Part 2 varaibles
     double alvin, simon, theodore; // Part 3 variables
-    // TODO: Come up with good names for these variables
+    // TODO: Come up with better names for these variables
 
     /*
     Part 1:
@@ -52,6 +52,7 @@ int main()
     c. The floor of the number
     */
 
+    // Explains the premises to the user
     cout << "Think of a number.\nThis number will go thorugh a "
          << "series of functions to determine:\n"
          << " - It's square root\n"
@@ -59,14 +60,17 @@ int main()
          << " - And the floor of the number\n"
          << "Enter your number here: ";
 
-    cin >> functionInput;
+    cin >> functionInput; // Recive the user's number
 
+    // Finds the sqaure root
     cout << "\nThe square root of " << functionInput
          << " is " << sqrt(functionInput) << "\n";
 
+    // Finds the power of the number raised to the 4th
     cout << functionInput << " raised to the 4th power"
          << " is " << pow(functionInput, 4) << "\n";
 
+    // Finds the floor of the number
     cout << "The floor of " << functionInput
          << " is " << floor(functionInput) << endl;
 
@@ -76,12 +80,15 @@ int main()
     code) AND RUN IT!
     */
 
+    // Explains the premise to the user
+    // Uses transition words since everything is happening in one go
     cout << "\nNow think about 2 integers.\n"
          << "The integers will go thorugh a\nfunction to find twice it's "
          << "product.\n"
          << "Enter your intergers here: ";
     cin >> number1 >> number2;
 
+    // Prints out the result of the function doubleMultiply()
     cout << "\nTwice the product of " << number1 << " and "
          << number2 << " is: " << doubleMultiply(number1, number2)
          << endl;
@@ -100,11 +107,14 @@ int main()
     code and a copy of your output.
     */
 
+    // Explains the premise to the user
+    // Indicates that they have reached the end
     cout << "\nFinally, think about any 3 numbers.\n"
          << "The sum of the three will be calculated with a function.\n"
          << "Enter them here: ";
     cin >> alvin >> simon >> theodore;
 
+    // Prints out the result of the function getSum()
     cout << "\nThe sum of " << alvin << ", " << simon
          << ", and " << theodore << " is "
          << getSum(alvin, simon, theodore);
