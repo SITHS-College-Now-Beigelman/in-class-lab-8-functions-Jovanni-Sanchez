@@ -35,7 +35,6 @@ int main()
      double functionInput;                // Part 1 variable
      int interger1, interger2;            // Part 2 varaibles
      double summand1, summand2, summand3; // Part 3 variables
-     // TODO: Come up with better names for these variables
 
      /*
      Part 1:
